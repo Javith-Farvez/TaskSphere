@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskSphere – Service Listing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="ts-page">
+    <div class="ts-card">
+      <h1 style="margin-bottom:0.75rem;font-size:1.4rem;">Service Listing</h1>
+      <p style="color:var(--muted);line-height:1.6;margin-bottom:1.25rem;">
+        This screen is integrated in the main TaskSphere app. Log in as a customer to access booking, payments, and tracking from your dashboard.
+      </p>
+      <a class="ts-btn" href="index.html">← Back to Home</a>
+      <a class="ts-btn" href="customer-app.html" style="margin-left:0.5rem;background:transparent;border:1px solid rgba(255,255,255,0.15);">Customer App</a>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+  <script>
+    const user = TaskSphereAuth.getUser();
+    if (user && (user.role || '').toUpperCase() === 'CUSTOMER') {
+      location.replace('customer-app.html');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Dashboard layout helpers */
+.dash-shell {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.dash-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .dash-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

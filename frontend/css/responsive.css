@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0 4% !important;
+  }
+
+  .roles-grid,
+  .provider-grid,
+  .svc-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 95% !important;
+    margin: 1rem;
+  }
+}

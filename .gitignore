@@ -1,0 +1,30 @@
+# Refact AI
+.refact/
+
+# Maven build output
+backend/target/
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Java
+*.class
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.*
