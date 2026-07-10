@@ -1,0 +1,53 @@
+/* TaskSphere — shared design tokens (dashboards also embed styles inline) */
+:root {
+  --bg: #07090f;
+  --surface: #0d1117;
+  --card: #111827;
+  --accent: #e94560;
+  --gold: #f5a623;
+  --teal: #02c39a;
+  --text: #e2e8f0;
+  --muted: #7c8aa0;
+  --grad: linear-gradient(135deg, #e94560 0%, #f5a623 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.ts-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.ts-card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 480px;
+  width: 100%;
+}
+
+.ts-btn {
+  display: inline-block;
+  background: var(--grad);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
